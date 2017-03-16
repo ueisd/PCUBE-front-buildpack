@@ -16,8 +16,8 @@ function indent() {
 }
 
 cd $BUILD_DIR/vendor/liblouis
-
-# autoreconfig
+echo "-----> Installing LibLouis makefile"
+# Autoreconfig
 echo "-----> Running autoreconfig"
   autoreconf -f -i  2>&1 | indent
 
