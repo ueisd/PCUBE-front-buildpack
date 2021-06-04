@@ -17,5 +17,5 @@ ls -a
 # make install
 echo "-----> Installing with Make"
 make api-install 2>&1
-make app-run-dev 2>&1
+make api-run-dev 2>&1
 
