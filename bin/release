@@ -3,5 +3,5 @@
 
 BUILD_DIR=$1
 
-default_process_types:
-  web: cd PCube-API && python -m flask run
+echo "default_process_types:
+  web: cd PCube-API && python -m flask run -h 0.0.0.0 -p \$port"
