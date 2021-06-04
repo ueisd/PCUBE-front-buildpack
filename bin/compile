@@ -8,7 +8,8 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 
 ls ../ -a
-
+echo "-----> BUILD_DIR="$1
+echo "-----> CACHE_DIR="$2
 
 # make install
 echo "-----> Installing with Make"
