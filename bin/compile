@@ -9,4 +9,4 @@ CACHE_DIR=$2
 
 # make install
 echo "-----> Installing with Make"
-make install 2>&1 | indent
+make install 2>&1
