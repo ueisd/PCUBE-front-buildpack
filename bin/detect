@@ -2,8 +2,4 @@
 # bin/detect <build-dir>
 BUILD_DIR=$1
 
-if [[ -f $BUILD_DIR/vendor/liblouis/Makefile  ||  -f $BUILD_DIR/vendor/liblouis/configure || true ]]; then
-  echo "C"$1
-else
-  echo "no"$1
-fi
+
