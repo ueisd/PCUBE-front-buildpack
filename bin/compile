@@ -7,21 +7,17 @@ set -o pipefail
 BUILD_DIR=$1
 CACHE_DIR=$2
 
-ls -a
-
 echo "-----> BUILD_DIR="$1
 echo "-----> CACHE_DIR="$2
 
 cd $1
 
 
-echo "-----> Installing"
+echo "-----> use client file only"
 pwd
 rm -rd $(find . -maxdepth 1 -type d -name "*" ! -name "." ! -name "PCube")
 rm -rf $(find . -maxdepth 1 -type f -name "*" ! -name "Procfilef")
-echo "-----> rep deleted"
 mv PCube/* .
-ls -a
-#rm -d PCube
 rm -rd PCube
-ls -a
+rm -f proxy.config.json
+mv proxy.config.heroku.json proxy.config.json
