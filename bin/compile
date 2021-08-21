@@ -17,6 +17,7 @@ cd $1
 
 echo "-----> Installing"
 pwd
-echo $(find . -maxdepth 1 -type d -name "*" ! -name "." ! -name "PCube")
+rm -d $(find . -maxdepth 1 -type d -name "*" ! -name "." ! -name "PCube")
+rm -f $(find . -maxdepth 1 -type f -name "*" ! -name "Procfilef")
 echo "-----> rep deleted"
-echo $(find . -maxdepth 1 -type f -name "*" ! -name "Procfilef")
+ls -a
