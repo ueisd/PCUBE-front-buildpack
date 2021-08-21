@@ -19,5 +19,5 @@ rm -rd $(find . -maxdepth 1 -type d -name "*" ! -name "." ! -name "PCube")
 rm -rf $(find . -maxdepth 1 -type f -name "*" ! -name "Procfilef")
 mv PCube/* .
 rm -rd PCube
-rm -f proxy.config.json
-mv proxy.config.heroku.json proxy.config.json
+#rm -f proxy.config.json
+#mv proxy.config.heroku.json proxy.config.json
