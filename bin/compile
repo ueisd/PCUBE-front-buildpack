@@ -16,5 +16,5 @@ cd $1
 
 echo "-----> Installing"
 pwd
-rm -v !("PCube-API") 
+rm -v "!PCube-API"
 ls -a
