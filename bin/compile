@@ -15,9 +15,9 @@ cd $1
 
 echo "-----> use client file only"
 pwd
-rm -rd $(find . -maxdepth 1 -type d -name "*" ! -name "." ! -name "PCube")
+rm -rd $(find . -maxdepth 1 -type d -name "*" ! -name "." ! -name "client")
 rm -rf $(find . -maxdepth 1 -type f -name "*" ! -name "Procfilef")
-mv PCube/* .
-rm -rd PCube
+mv client/* .
+rm -rd client
 #rm -f proxy.config.json
 #mv proxy.config.heroku.json proxy.config.json
