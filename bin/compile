@@ -7,14 +7,13 @@ set -o pipefail
 BUILD_DIR=$1
 CACHE_DIR=$2
 
-ls ../ -a
+ls -a
 echo "-----> BUILD_DIR="$1
 echo "-----> CACHE_DIR="$2
 
 cd $1
 ls -a
 
-# make install
-echo "-----> Installing with Make"
-make api-install 2>&1
+echo "-----> Installing"
+
 
