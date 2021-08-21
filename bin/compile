@@ -23,6 +23,5 @@ echo "-----> rep deleted"
 mv PCube/* .
 ls -a
 #rm -d PCube
-cd PCube
-pwd
+rm -rd PCube
 ls -a
