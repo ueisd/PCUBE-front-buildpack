@@ -15,5 +15,5 @@ cd $1
 ls -a
 
 echo "-----> Installing"
-
+pwd
 
